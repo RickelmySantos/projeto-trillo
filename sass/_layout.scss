@@ -1,6 +1,4 @@
 .container{
-    border: 2px black solid;
-
     max-width: 120rem;
     margin: 8rem auto;
     background-color: var(--color-grey-light-1);
@@ -9,7 +7,6 @@
 }
 
 .header{
-    border: 2px blue solid;
     font-size: 1.4rem;
     height: 7rem;
     border-bottom: var(--color-grey-light-2);
@@ -19,26 +16,20 @@
     justify-content: space-between;
     align-items: center;
    
-
-
 }
 .content{
-    border: 2px green solid;
+  
 
-    display: flex;
+ 
 }
 
 .sidebar{
-
     background-color: var(--color-grey-dark-1);
-    
     flex: 0 0 18%;
 }
 
 .hotel-view{
- 
     background-color: #fff;
     background-color: orange;
-    
     flex: 1;
 }

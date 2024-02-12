@@ -35,7 +35,6 @@ body {
   min-height: 100vh; }
 
 .container {
-  border: 2px black solid;
   max-width: 120rem;
   margin: 8rem auto;
   background-color: var(--color-grey-light-1);
@@ -43,7 +42,6 @@ body {
   min-height: 50rem; }
 
 .header {
-  border: 2px blue solid;
   font-size: 1.4rem;
   height: 7rem;
   border-bottom: var(--color-grey-light-2);
@@ -51,10 +49,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-
-.content {
-  border: 2px green solid;
-  display: flex; }
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
@@ -66,7 +60,8 @@ body {
   flex: 1; }
 
 .logo {
-  height: 3.2rem; }
+  height: 3.2rem;
+  margin-left: 2rem; }
 
 .search {
   flex: 0 0 40%;
@@ -106,7 +101,34 @@ body {
     fill: var(--color-grey-dark-3); }
 
 .user-nav {
-  background-color: greenyellow; }
+  display: flex;
+  align-items: center;
+  align-self: stretch; }
+  .user-nav > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    align-items: center; }
+  .user-nav > *:hover {
+    background-color: var(--color-grey-light-2); }
+  .user-nav__icon-box {
+    display: flex;
+    align-items: center;
+    position: relative; }
   .user-nav__icon {
     height: 2.25rem;
-    width: 2.25rem; }
+    width: 2.25rem;
+    fill: var(--color-grey-dark-2); }
+  .user-nav__notification {
+    font-size: .8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
